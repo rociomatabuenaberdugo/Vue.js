@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reverse order</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        p {
+            margin-top: 30px;
+            margin-left: 20px;
+            font-weight: 700;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: .75em;
+        }
+        
+        button {
+            margin-top: 15px;
+            margin-left: 25px;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+</body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app5 = new Vue({
+        el: '#app-5',
+        data: {
+            message: "Don't you wanna reverse this message...? Click the button."
+        },
+        methods: {
+            reverseMessage: function () {
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+</script>
+
+</html>

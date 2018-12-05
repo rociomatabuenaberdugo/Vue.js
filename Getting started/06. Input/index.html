@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        p {
+            margin-top: 30px;
+            margin-left: 25px;
+            font-weight: 700;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1em;
+        }
+
+        input {
+            margin-top: 10px;
+            margin-left: 25px;
+            border-radius: 5%;
+            font-size: .75em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app-6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+</body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app6 = new Vue({
+        el: '#app-6',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+</script>
+
+</html>

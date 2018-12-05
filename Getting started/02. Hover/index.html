@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hover</title>
+    <style>
+
+        * {
+            margin: 0px;
+        }
+
+        #app-2English {
+            margin-top: 30px;
+            margin-left: 20px;
+            font-weight:700;
+            font-size: 1.5em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #app-2Español {
+            margin-top: 30px;
+            margin-left: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 800;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="app-2English">
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds
+            to see my dynamically bound title!
+        </span>
+    </div>
+
+    <div id="app-2Español">
+        <span v-bind:title="message">
+            ¡Pasa el puntero sobre mi para ver a qué hora cargaste esta página!
+        </span>
+    </div>
+
+</body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app2 = new Vue({
+        el: '#app-2English',
+        data: {
+            message: 'You loaded this page on ' + new Date().toLocaleString()
+        }
+    })
+
+    var app2 = new Vue({
+        el: '#app-2Español',
+        data: {
+            message: 'Cargaste esta página el día ' + new Date().toLocaleString()
+        }
+    })
+</script>
+
+</html>

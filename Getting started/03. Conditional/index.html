@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditional: True or False</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        #app-3 {
+            margin-top: 30px;
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 1.5em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .indicate {
+            margin-top: 30px;
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 0.5em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app-3">
+        <span v-if="seen">Now you see me</span>
+    </div>
+    <br>
+    <span class="indicate"> Put in console: "app3.seen = false". C'mon, try it! </span>
+</body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app3 = new Vue({
+        el: '#app-3',
+        data: {
+            seen: true
+        }
+    })
+</script>
+
+</html>
