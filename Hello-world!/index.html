@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World in Vue.js</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        .hello {
+            margin-top: 20px;
+            color: #fff;
+            text-align: center;
+            font-size: 3em;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="hello-world-app">
+        <h1 class="hello"> {{ msg }} </h1>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
+    </script>
+    <script>
+        new Vue({
+            el: "#hello-world-app",
+            data() {
+                return {
+                    msg: "Hello World!"
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
