@@ -24,6 +24,8 @@
 
     <div id="hello-world-app">
         <h1 class="hello"> {{ msg }} </h1>
+        <br>
+        <h1 class="hello"> {{ msge }} </h1>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
     </script>
@@ -32,7 +34,8 @@
             el: "#hello-world-app",
             data() {
                 return {
-                    msg: "Hello World!"
+                    msg: "Hello World!",
+                    msge: "¡Hola mundo!"
                 }
             }
         });
