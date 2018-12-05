@@ -1,7 +1,7 @@
 # Vue.js
 
-### Para ejecutar el servidor, escribe el siguiente comando en la cmd:
+### If you want to run the server, execute the following command:
 
 ```
-npm start nombre-del-server.js  
+npm start name-of-the-server.js  
 ```
